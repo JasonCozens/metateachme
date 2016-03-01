@@ -1,0 +1,4 @@
+mkdir TeachMe
+cd TeachMe
+git init
+echo $(date) > start.txt
