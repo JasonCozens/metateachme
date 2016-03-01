@@ -1,3 +1,7 @@
+if [ -e "TeachMe" ]
+then
+    rm -r TeachMe
+fi
 mkdir TeachMe
 cd TeachMe
 git init
