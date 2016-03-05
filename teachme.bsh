@@ -1,8 +1,12 @@
 if [ -e "TeachMe" ]
 then
-    rm -r TeachMe
+    rm -rf TeachMe
 fi
 mkdir TeachMe
 cd TeachMe
 git init
 echo $(date) > start.txt
+
+git add start.txt
+git commit -m "Record of start added."
+
