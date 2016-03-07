@@ -20,5 +20,11 @@ git commit -m "New menu template."
 
 sed -e "s/\(\[Starters\]\)/\1\nSoup/" menu.txt |
 sed -e "s/\(\[Main\]\)/\1\nRoast Beef/" |
-sed -e "s/\(\[Dessert\]\)/\1\nCheese Cake/"
+sed -e "s/\(\[Dessert\]\)/\1\nCheese Cake/" > tmp.txt
+
+mv tmp.txt menu.txt
+
+git status
+
+git diff
 
