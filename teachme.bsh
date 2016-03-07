@@ -28,7 +28,10 @@ git status
 
 git diff
 
-
-read -p "Do you want to quit? [y/n]: " ans
-echo "You said: $ans"
-
+echo "Do you want to continue?"
+select ans in "Yes" "No"; do
+    case $ans in
+        Yes ) echo "Continuing"; break;;
+        No ) exit;;
+    esac
+done
