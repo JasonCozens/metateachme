@@ -10,3 +10,15 @@ echo $(date) > start.txt
 git add start.txt
 git commit -m "Record of start added."
 
+echo "[Menu]" > menu.txt
+echo "[Starters]" >> menu.txt
+echo "[Main]" >> menu.txt
+echo "[Dessert]" >> menu.txt
+
+git add menu.txt
+git commit -m "New menu template."
+
+sed -e "s/\(\[Starters\]\)/\1\nSoup/" menu.txt |
+sed -e "s/\(\[Main\]\)/\1\nRoast Beef/" |
+sed -e "s/\(\[Dessert\]\)/\1\nCheese Cake/"
+
