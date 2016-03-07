@@ -28,3 +28,7 @@ git status
 
 git diff
 
+
+read -p "Do you want to quit? [y/n]: " ans
+echo "You said: $ans"
+
